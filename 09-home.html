@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>天禧 Client 首页</title>
+  <link rel="stylesheet" href="09-home.css" />
+</head>
+<body>
+  <div class="app-window">
+
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-bar-left">
+        <div class="nav-actions">
+          <button class="icon-btn nav-btn nav-back">
+            <img src="https://www.figma.com/api/mcp/asset/d3675a41-0b02-442c-813b-b1563867ea7f" alt="后退" />
+          </button>
+          <button class="icon-btn nav-btn">
+            <img src="https://www.figma.com/api/mcp/asset/e790834a-bd98-4cb8-98b5-cd11f1c23271" alt="前进" />
+          </button>
+        </div>
+        <div class="tabs">
+          <div class="tab tab-active">
+            <div class="tab-icon-home">
+              <img src="https://www.figma.com/api/mcp/asset/1db3315e-53ec-4c7e-8e9b-af1acf25da55" alt="" class="tab-home-v1" />
+              <img src="https://www.figma.com/api/mcp/asset/2b9a86a6-4df7-414f-bed5-3bbc963f7963" alt="" class="tab-home-v2" />
+              <img src="https://www.figma.com/api/mcp/asset/0b0fb361-4a51-47be-8871-7f42a40adc72" alt="" class="tab-home-v3" />
+            </div>
+            <span>主页</span>
+          </div>
+        </div>
+      </div>
+      <div class="window-controls">
+        <div class="account-btn">
+          <img src="https://www.figma.com/api/mcp/asset/dd0d2de8-6491-42c6-857a-49f7824ce069" alt="账号" class="account-icon" />
+          <img src="https://www.figma.com/api/mcp/asset/e16242b7-7e60-4530-8ca6-c726c41dbe61" alt="展开" class="dropdown-icon" />
+        </div>
+        <button class="icon-btn" title="置顶">
+          <img src="https://www.figma.com/api/mcp/asset/d5d79858-c322-4b2c-a20e-da8349bd9ecb" alt="置顶" />
+        </button>
+        <button class="icon-btn" title="最小化">
+          <img src="https://www.figma.com/api/mcp/asset/dae05900-79dd-4dec-aa42-235bea35a6b9" alt="最小化" />
+        </button>
+        <button class="icon-btn" title="窗口化">
+          <img src="https://www.figma.com/api/mcp/asset/5fa644b3-6afc-415d-9814-6e1fc2f234ba" alt="窗口化" />
+        </button>
+        <button class="icon-btn close-btn" title="关闭">
+          <img src="https://www.figma.com/api/mcp/asset/176b22d7-af1c-441a-9b0c-a4d95e4f5aee" alt="关闭" />
+        </button>
+      </div>
+      <div class="tab-bar-divider"></div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+
+      <!-- Collapsed Sidebar -->
+      <aside class="sidebar-collapsed">
+        <button class="icon-btn sidebar-toggle-btn">
+          <img src="https://www.figma.com/api/mcp/asset/62c4eed1-0878-4a16-b858-eb93b5e20699" alt="侧边栏" />
+        </button>
+        <div class="sidebar-nav-icons">
+          <button class="sidebar-icon-item new-btn" title="新建">
+            <img src="https://www.figma.com/api/mcp/asset/9509bbf8-6774-45b1-8b64-b5b9cf44f04f" alt="新建" />
+          </button>
+          <button class="sidebar-icon-item" title="知识库">
+            <img src="https://www.figma.com/api/mcp/asset/a0690c2d-6777-4959-b8f4-24c58152920f" alt="知识库" />
+          </button>
+          <button class="sidebar-icon-item" title="模型广场">
+            <img src="https://www.figma.com/api/mcp/asset/9955d4c8-f13f-4cc3-9ae4-8fc93c9549dc" alt="模型广场" />
+          </button>
+          <button class="sidebar-icon-item" title="AI Space">
+            <img src="https://www.figma.com/api/mcp/asset/41fa5aa9-d878-4d3b-9501-f89bdb5c1af0" alt="AI Space" />
+          </button>
+          <button class="sidebar-icon-item" title="历史记录">
+            <img src="https://www.figma.com/api/mcp/asset/72511035-8b7c-4b5e-8c5b-451e37688eb3" alt="历史记录" />
+          </button>
+        </div>
+        <div class="sidebar-collapsed-border"></div>
+      </aside>
+
+      <!-- Content Area -->
+      <main class="content-area">
+
+        <!-- Top right tip -->
+        <div class="top-tip">
+          <button class="icon-btn tip-btn">
+            <img src="https://www.figma.com/api/mcp/asset/1b381a16-10b4-461a-adf0-5090031ccd61" alt="提示" />
+          </button>
+          <button class="icon-btn tip-btn">
+            <div class="notify-wrap">
+              <img src="https://www.figma.com/api/mcp/asset/21cde088-e2d6-40b5-925a-b3782d585797" alt="通知" />
+              <span class="notify-dot"></span>
+            </div>
+          </button>
+        </div>
+
+        <!-- Logo & Greeting -->
+        <div class="greeting-row">
+          <div class="greeting-icon">
+            <img src="https://www.figma.com/api/mcp/asset/dacf8dbd-190c-4028-a3bd-6c53efb65215" alt="天禧" />
+          </div>
+          <span class="greeting-text">下午好，xin</span>
+        </div>
+
+        <!-- Input + Feature -->
+        <div class="input-section">
+          <!-- Feature Tags -->
+          <div class="feature-tags">
+            <button class="feature-tag">
+              <img src="https://www.figma.com/api/mcp/asset/3559f2ae-c3f3-4a12-b081-7f7ebbfb4c53" alt="AI写作" class="tag-icon" />
+              <span>AI写作</span>
+            </button>
+            <button class="feature-tag">
+              <div class="tag-icon-wrap">
+                <img src="https://www.figma.com/api/mcp/asset/b9b9193d-9bfe-483c-ad0d-9e1d1c78b043" alt="AI翻译" class="tag-icon-inner" />
+                <img src="https://www.figma.com/api/mcp/asset/cf5cbaad-1ca9-4d1d-a5b0-8ccfea79ccfd" alt="" class="tag-icon-v1" />
+                <img src="https://www.figma.com/api/mcp/asset/526096ff-d47b-4be8-81d6-b00493002bfb" alt="" class="tag-icon-v2" />
+              </div>
+              <span>AI翻译</span>
+            </button>
+            <button class="feature-tag">
+              <img src="https://www.figma.com/api/mcp/asset/58d5480f-1d7a-4f42-8a1c-ca952ebca68d" alt="AI操控" class="tag-icon" />
+              <span>AI操控</span>
+            </button>
+            <button class="feature-tag">
+              <img src="https://www.figma.com/api/mcp/asset/7d2a9aab-e586-428e-8255-43ac6d4e909f" alt="AI妙记" class="tag-icon" />
+              <span>AI妙记</span>
+            </button>
+            <button class="feature-tag">
+              <img src="https://www.figma.com/api/mcp/asset/20e99ef5-5a21-4fe0-9354-d4471e1df378" alt="AI修图" class="tag-icon" />
+              <span>AI修图</span>
+            </button>
+            <button class="feature-tag">
+              <img src="https://www.figma.com/api/mcp/asset/4beb1f5e-89cb-4854-af31-f79887901ff2" alt="全部" class="tag-icon" />
+              <span>全部</span>
+            </button>
+          </div>
+
+          <!-- Input Box -->
+          <div class="input-area">
+            <div class="input-glow-light"></div>
+            <div class="input-box">
+              <div class="input-text-area">
+                <div class="input-cursor"></div>
+                <span class="input-placeholder">你可以问我任何问题…</span>
+              </div>
+              <div class="input-toolbar">
+                <div class="toolbar-left-group">
+                  <div class="model-selector">
+                    <span>天禧×DeepSeek-V3.1</span>
+                    <img src="https://www.figma.com/api/mcp/asset/be668d90-221a-4cff-8863-914aebfaa2e6" alt="切换" class="model-switch-icon" />
+                  </div>
+                  <div class="deep-think-selector">
+                    <img src="https://www.figma.com/api/mcp/asset/738ae617-541a-4744-b748-6869e28acd84" alt="深度思考" class="deep-think-icon" />
+                    <span>深度思考</span>
+                  </div>
+                </div>
+                <div class="toolbar-right">
+                  <div class="toolbar-icons">
+                    <button class="tool-btn" title="截图">
+                      <img src="https://www.figma.com/api/mcp/asset/a1708692-746c-4dc7-9d59-ba32dd6f487c" alt="截图" />
+                    </button>
+                    <button class="tool-btn" title="文件">
+                      <img src="https://www.figma.com/api/mcp/asset/eb9d795f-db1b-4697-8e42-baae3f266147" alt="文件" />
+                    </button>
+                    <button class="tool-btn tool-btn-img" title="图片">
+                      <img src="https://www.figma.com/api/mcp/asset/9bb6a3e7-8563-4c3e-a58f-a99132e696f0" alt="图片" />
+                    </button>
+                    <button class="tool-btn" title="语音">
+                      <img src="https://www.figma.com/api/mcp/asset/cc1aa902-8fda-4a9e-bc98-498cb3d3c98a" alt="语音" />
+                    </button>
+                    <div class="toolbar-divider"></div>
+                  </div>
+                  <button class="send-btn" title="发送">
+                    <img src="https://www.figma.com/api/mcp/asset/58487462-b43e-4d1b-84d5-5c0d06533f46" alt="发送" />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll Tip -->
+        <div class="scroll-tip">
+          <img src="https://www.figma.com/api/mcp/asset/26aa31dc-7fc4-4eab-b308-323b36a4cdbf" alt="鼠标" class="scroll-tip-icon" />
+          <span>向下滚动，发现你的专属内容</span>
+        </div>
+
+        <!-- Content Cards -->
+        <div class="cards-grid">
+          <!-- 文章 大图 (左上, 跨2行) -->
+          <div class="card card-article card-tall">
+            <div class="card-inner">
+              <div class="card-content-top">
+                <div class="card-title-row">
+                  <span class="card-title">比亚迪第二代兆瓦闪充设施大规模部署：2100KW功率，5分钟补能500公里</span>
+                </div>
+                <div class="card-img-wrap">
+                  <img src="https://www.figma.com/api/mcp/asset/00c89fc3-3f9b-4597-8531-403f55167fa2" alt="" class="card-img" />
+                </div>
+              </div>
+              <span class="card-source">来自于：红星新闻</span>
+            </div>
+          </div>
+
+          <!-- query 卡片 (右上) -->
+          <div class="card card-query">
+            <div class="card-inner">
+              <img src="https://www.figma.com/api/mcp/asset/15f32131-0bed-447e-975a-48668756bf70" alt="" class="query-icon" />
+              <p class="card-body">.tdb文件属于什么类型？需要使用哪些软件才能正常打开？</p>
+            </div>
+          </div>
+
+          <!-- 历史 query 卡片 (右上第二) -->
+          <div class="card card-history">
+            <div class="card-inner">
+              <div class="history-item">
+                <span>使用AI插件提升排版效率？</span>
+                <img src="https://www.figma.com/api/mcp/asset/a1708692-746c-4dc7-9d59-ba32dd6f487c" alt="" class="history-arrow" />
+              </div>
+              <div class="history-item">
+                <span>联想电脑怎么选</span>
+                <img src="https://www.figma.com/api/mcp/asset/eb9d795f-db1b-4697-8e42-baae3f266147" alt="" class="history-arrow" />
+              </div>
+            </div>
+          </div>
+
+          <!-- 文章 (中) -->
+          <div class="card card-article-sm">
+            <div class="card-inner">
+              <div class="card-content-top">
+                <p class="card-title">Google Gemini 3</p>
+                <p class="card-body">当AI开始预测你的需求时，它到底懂你多少，如何让Google Gemini 3 做出有高级质感的UI</p>
+              </div>
+              <span class="card-source">来自于：财联社</span>
+            </div>
+          </div>
+
+          <!-- query (中) -->
+          <div class="card card-query-sm">
+            <div class="card-inner">
+              <img src="https://www.figma.com/api/mcp/asset/15f32131-0bed-447e-975a-48668756bf70" alt="" class="query-icon" />
+              <p class="card-body">如何使用Figma 的AI插件提升排版效率？</p>
+            </div>
+          </div>
+
+          <!-- 播客 (中右) -->
+          <div class="card card-podcast">
+            <div class="card-inner">
+              <div class="podcast-header">
+                <div class="podcast-cover">
+                  <img src="https://www.figma.com/api/mcp/asset/854804f1-b86a-4ac4-9883-ce14193e48db" alt="播客封面" />
+                </div>
+                <div class="podcast-info">
+                  <p class="podcast-title">设计职场商务英语汇报技巧二三事</p>
+                </div>
+                <button class="podcast-play">
+                  <img src="https://www.figma.com/api/mcp/asset/caeee0c2-71f7-4b04-97b3-a62461649582" alt="播放" />
+                </button>
+              </div>
+              <p class="podcast-desc">"用简洁专业的表达传递关键价值、逻辑清晰贴合职场</p>
+            </div>
+          </div>
+
+          <!-- 文章 (下左) -->
+          <div class="card card-article-sm">
+            <div class="card-inner">
+              <div class="card-content-top">
+                <p class="card-title">AI时代的微交互</p>
+                <p class="card-body">微交互时代：在瞬时体验中获取用户信任与忠诚的设计规律，是现在设计师格外需要关注的一个</p>
+              </div>
+              <span class="card-source">来自于：设计师联盟</span>
+            </div>
+          </div>
+
+          <!-- App 卡片 (下中) -->
+          <div class="card card-app">
+            <div class="card-inner">
+              <div class="app-icon-wrap">
+                <img src="https://www.figma.com/api/mcp/asset/2290f73f-0e39-4e3d-9a47-97fa56ca08a1" alt="合成新元素" class="app-icon" />
+              </div>
+              <div class="app-info">
+                <p class="app-name">合成新元素</p>
+                <p class="app-desc">对话方式玩「涂鸦上帝」合成游戏</p>
+                <p class="app-from">来自 扣子智能体</p>
+              </div>
+              <div class="app-hot-tag">hot</div>
+            </div>
+          </div>
+
+          <!-- 文章 大图 (右下) -->
+          <div class="card card-article-img">
+            <div class="card-inner">
+              <div class="card-content-top">
+                <p class="card-title card-title-dark">AUI 设计的核心是将虚拟信息与真实世界相结合，强调空间场景中的交互性</p>
+                <div class="card-img-wrap">
+                  <img src="https://www.figma.com/api/mcp/asset/dadc10a3-9608-4ed2-809c-7875c532a0c0" alt="" class="card-img" />
+                </div>
+              </div>
+              <span class="card-source card-source-dark">来自于：UI中国</span>
+            </div>
+          </div>
+
+          <!-- 天气 (右上角) -->
+          <div class="card card-weather">
+            <div class="card-inner">
+              <span class="weather-date">2016-01-21</span>
+              <div class="weather-main">
+                <div class="weather-temp-wrap">
+                  <span class="weather-temp">29°</span>
+                  <span class="weather-desc">多云间晴</span>
+                </div>
+                <div class="weather-icon-wrap">
+                  <img src="https://www.figma.com/api/mcp/asset/7a6a3642-59ff-45e2-9a9e-8d7d20419170" alt="晴" class="weather-sun" />
+                  <img src="https://www.figma.com/api/mcp/asset/e95de108-c0b9-4d67-a626-390800087a0e" alt="云" class="weather-cloud" />
+                </div>
+              </div>
+              <div class="weather-footer">
+                <span>海淀区</span>
+                <span>36°～13°</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 天禧 Claw 入口 -->
+        <a href="02-subscribe.html" class="tianxi-claw-entry">
+          <img src="https://www.figma.com/api/mcp/asset/dacf8dbd-190c-4028-a3bd-6c53efb65215" alt="天禧 Claw" class="entry-icon" />
+          <span>天禧 Claw</span>
+        </a>
+
+      </main>
+    </div>
+  </div>
+
+  <script>
+    // 功能标签切换
+    document.querySelectorAll('.feature-tag').forEach(tag => {
+      tag.addEventListener('click', function() {
+        document.querySelectorAll('.feature-tag').forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

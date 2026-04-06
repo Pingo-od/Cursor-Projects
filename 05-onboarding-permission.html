@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>操作方式 - 天禧 Claw</title>
+  <link rel="stylesheet" href="05-onboarding-permission.css">
+</head>
+<body>
+  <div class="app-window">
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-bar-left">
+        <div class="nav-actions">
+          <button class="icon-btn disabled">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M10 12L6 8L10 4" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="icon-btn disabled">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="tabs">
+          <div class="tab tab-active">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M7 1L9 5L13 5.5L10 8.5L10.5 13L7 11L3.5 13L4 8.5L1 5.5L5 5L7 1Z" fill="rgba(255,255,255,0.6)"/>
+            </svg>
+            <span>开箱引导</span>
+          </div>
+        </div>
+      </div>
+      <div class="window-controls">
+        <div class="account-pill">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <circle cx="7" cy="5" r="2.5" stroke="rgba(255,255,255,0.5)" stroke-width="1.2"/>
+            <path d="M2 12C2 9.5 4 8 7 8C10 8 12 9.5 12 12" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <span>未登录</span>
+        </div>
+        <button class="icon-btn">
+          <svg width="12" height="2" viewBox="0 0 12 2" fill="none">
+            <rect width="12" height="2" rx="1" fill="rgba(255,255,255,0.6)"/>
+          </svg>
+        </button>
+        <button class="icon-btn close-btn">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M1 1L9 9M9 1L1 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="tab-bar-divider"></div>
+    </div>
+
+    <!-- Body -->
+    <div class="body">
+      <!-- Step Indicator -->
+      <div class="step-indicator">
+        <div class="step-dot gray"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <div class="step-line blue"></div>
+        <div class="step-dot blue active"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <span class="step-label">Step 3 / 5</span>
+      </div>
+
+      <!-- Title -->
+      <div class="title-area">
+        <h1 class="title">Claw 准备好了，你想怎么使用它？</h1>
+        <p class="subtitle">选择 Claw 执行任务时你希望介入的程度</p>
+        <p class="subtitle">你随时可以在设置中修改这个选项</p>
+      </div>
+
+      <!-- Options -->
+      <div class="options-list">
+        <label class="option-row selected">
+          <input type="radio" name="permission" value="always" checked>
+          <div class="radio-circle">
+            <div class="radio-dot"></div>
+          </div>
+          <div class="option-text">
+            <div class="option-title">每次都告诉我</div>
+            <div class="option-desc">操作前都会和你确认，你完全掌控每一步。适合刚开始使用 Claw 的你。</div>
+          </div>
+        </label>
+
+        <label class="option-row">
+          <input type="radio" name="permission" value="important">
+          <div class="radio-circle">
+            <div class="radio-dot"></div>
+          </div>
+          <div class="option-text">
+            <div class="option-title-row">
+              <span class="option-title">只在重要时告诉我</span>
+              <span class="badge-recommend">推荐</span>
+            </div>
+            <div class="option-desc">日常整理自动完成，涉及删除或系统文件时 Claw 才会停下来问你。</div>
+          </div>
+        </label>
+
+        <label class="option-row">
+          <input type="radio" name="permission" value="auto">
+          <div class="radio-circle">
+            <div class="radio-dot"></div>
+          </div>
+          <div class="option-text">
+            <div class="option-title">帮我全部搞定</div>
+            <div class="option-desc">Claw 自主判断并执行，Claw会保留「操作记录」并支持撤销。</div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Safety Note -->
+      <div class="safety-note">
+        无论选哪个，涉及<strong>系统文件夹</strong>或<strong>不可撤销的操作</strong>时，Claw 都会先停下来问你。
+      </div>
+
+      <!-- Bottom Buttons -->
+      <div class="bottom-buttons">
+        <a href="10-claw.html" class="btn-skip">跳过此步骤</a>
+        <a href="06-onboarding-access.html" class="btn-next">下一步：设置访问范围 →</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.option-row').forEach(row => {
+      row.addEventListener('click', function() {
+        document.querySelectorAll('.option-row').forEach(r => r.classList.remove('selected'));
+        this.classList.add('selected');
+        this.querySelector('input[type="radio"]').checked = true;
+      });
+    });
+  </script>
+</body>
+</html>

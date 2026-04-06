@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>认识你的虾 - 天禧 Claw</title>
+  <link rel="stylesheet" href="04-onboarding-config.css">
+</head>
+<body>
+  <div class="app-window">
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-bar-left">
+        <div class="nav-actions">
+          <button class="icon-btn disabled">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M10 12L6 8L10 4" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="icon-btn disabled">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="tabs">
+          <div class="tab tab-active">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M7 1L9 5L13 5.5L10 8.5L10.5 13L7 11L3.5 13L4 8.5L1 5.5L5 5L7 1Z" fill="rgba(255,255,255,0.6)"/>
+            </svg>
+            <span>开箱引导</span>
+          </div>
+        </div>
+      </div>
+      <div class="window-controls">
+        <div class="account-pill">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <circle cx="7" cy="5" r="2.5" stroke="rgba(255,255,255,0.5)" stroke-width="1.2"/>
+            <path d="M2 12C2 9.5 4 8 7 8C10 8 12 9.5 12 12" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <span>未登录</span>
+        </div>
+        <button class="icon-btn">
+          <svg width="12" height="2" viewBox="0 0 12 2" fill="none">
+            <rect width="12" height="2" rx="1" fill="rgba(255,255,255,0.6)"/>
+          </svg>
+        </button>
+        <button class="icon-btn close-btn">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M1 1L9 9M9 1L1 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="tab-bar-divider"></div>
+    </div>
+
+    <!-- Body -->
+    <div class="body">
+      <!-- Step Indicator -->
+      <div class="step-indicator">
+        <div class="step-dot gray"></div>
+        <div class="step-line blue"></div>
+        <div class="step-dot blue active"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <span class="step-label">Step 2 / 5</span>
+      </div>
+
+      <!-- Title Area -->
+      <div class="title-area">
+        <h1 class="title">认识你的虾</h1>
+        <p class="subtitle">为你的虾设置名称和个性</p>
+      </div>
+
+      <!-- Settings Area -->
+      <div class="settings-area">
+        <!-- Name Setting -->
+        <div class="setting-group">
+          <label class="setting-label">虾的名称</label>
+          <input type="text" class="setting-input" placeholder="给你的虾起个名字" value="小助手">
+        </div>
+
+        <!-- Personality Setting -->
+        <div class="setting-group">
+          <label class="setting-label">个性设置</label>
+          <div class="personality-options">
+            <button class="personality-btn active">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="7" cy="8" r="1.5" fill="currentColor"/>
+                <circle cx="13" cy="8" r="1.5" fill="currentColor"/>
+                <path d="M6 12C6 12 7.5 14 10 14C12.5 14 14 12 14 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <span>友好</span>
+            </button>
+            <button class="personality-btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="7" cy="8" r="1.5" fill="currentColor"/>
+                <circle cx="13" cy="8" r="1.5" fill="currentColor"/>
+                <path d="M6 13H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              <span>专业</span>
+            </button>
+            <button class="personality-btn">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="7" cy="8" r="1.5" fill="currentColor"/>
+                <circle cx="13" cy="8" r="1.5" fill="currentColor"/>
+                <path d="M7 12L10 15L13 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>幽默</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Response Style -->
+        <div class="setting-group">
+          <label class="setting-label">回复风格</label>
+          <div class="style-options">
+            <button class="style-btn active">简洁</button>
+            <button class="style-btn">详细</button>
+            <button class="style-btn">平衡</button>
+          </div>
+        </div>
+
+        <!-- Language Setting -->
+        <div class="setting-group">
+          <label class="setting-label">语言偏好</label>
+          <select class="setting-select">
+            <option value="zh-CN" selected>简体中文</option>
+            <option value="zh-TW">繁體中文</option>
+            <option value="en">English</option>
+            <option value="ja">日本語</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Bottom Buttons -->
+      <div class="bottom-buttons">
+        <a href="03-onboarding-select.html" class="btn-prev">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>上一步</span>
+        </a>
+        <a href="05-onboarding-permission.html" class="btn-next">
+          <span>下一步</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 个性单选
+    document.querySelectorAll('.personality-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.personality-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // 回复风格单选
+    document.querySelectorAll('.style-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.style-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

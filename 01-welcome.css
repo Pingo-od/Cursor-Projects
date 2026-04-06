@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'HYQiHei', sans-serif;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-window {
+  width: 1200px;
+  height: 770px;
+  background: #09090b;
+  border-radius: 12px;
+  box-shadow: 0 4px 26.25px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tab Bar */
+.tab-bar {
+  height: 52px;
+  background: #18181b;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  position: relative;
+}
+
+.tab-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 4px;
+}
+
+.icon-btn {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.icon-btn:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+.icon-btn.disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.icon-btn.disabled:hover {
+  background: transparent;
+}
+
+.tabs {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  transition: background 0.15s;
+  position: relative;
+  flex: 1;
+}
+
+.tab:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.tab-active {
+  background: rgba(255,255,255,0.08);
+  border: 0.5px solid rgba(255,255,255,0.08);
+}
+
+.tab-icon {
+  width: 14px;
+  height: 14px;
+}
+
+.tab-sep {
+  position: absolute;
+  right: 0;
+  top: 7.5px;
+  width: 1px;
+  height: 17px;
+  background: rgba(0,0,0,0.16);
+  border-radius: 4px;
+}
+
+.tab-sep.light {
+  background: rgba(255,255,255,0.16);
+}
+
+.window-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding-left: 64px;
+}
+
+.account-pill {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 28px;
+  padding: 4px;
+  border-radius: 100px;
+  background: rgba(255,255,255,0.08);
+  border: 0.5px solid rgba(255,255,255,0.08);
+}
+
+.close-btn:hover {
+  background: rgba(255,70,70,0.3);
+}
+
+.tab-bar-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(255,255,255,0.08);
+}
+
+/* Body */
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 200px;
+  gap: 40px;
+}
+
+.logo-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.logo-text {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.8);
+}
+
+.subtitle {
+  font-size: 18px;
+  color: rgba(255,255,255,0.5);
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.4);
+  text-align: center;
+  max-width: 500px;
+}
+
+.features {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.feature-card {
+  flex: 1;
+  background: #18181b;
+  border-radius: 16px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feature-icon-bg {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.8);
+}
+
+.feature-desc {
+  font-size: 13px;
+  line-height: 1.5;
+  color: rgba(255,255,255,0.5);
+}
+
+.cta-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 48px;
+  background: #3b83f7;
+  color: rgba(255,255,255,0.8);
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.cta-btn:hover {
+  background: #4a8fff;
+}
+
+.cta-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.cta-skip {
+  font-size: 13px;
+  color: rgba(255,255,255,0.35);
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.cta-skip:hover {
+  color: rgba(255,255,255,0.6);
+}

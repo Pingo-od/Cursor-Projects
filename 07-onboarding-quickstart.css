@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'HYQiHei', sans-serif;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+.app-window {
+  width: 1200px;
+  height: 770px;
+  background: #09090b;
+  border-radius: 12px;
+  box-shadow: 0 4px 26.25px rgba(0,0,0,0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tab Bar */
+.tab-bar {
+  height: 52px;
+  background: #18181b;
+  border-radius: 10px 10px 0 0;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tab-bar-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+
+.window-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-btn {
+  width: 12px;
+  height: 12px;
+  border: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Body */
+.body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 40px;
+  gap: 32px;
+  overflow: auto;
+  max-width: 880px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Step Indicator */
+.step-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.step-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.step-dot.gray {
+  background: rgba(255,255,255,0.2);
+}
+
+.step-dot.blue {
+  background: #3b83f7;
+}
+
+.step-dot.blue.active {
+  width: 10px;
+  height: 10px;
+  box-shadow: 0 0 0 3px rgba(59,131,247,0.25);
+}
+
+.step-line {
+  width: 32px;
+  height: 2px;
+  flex-shrink: 0;
+}
+
+.step-line.gray {
+  background: rgba(255,255,255,0.15);
+}
+
+.step-line.blue {
+  background: #3b83f7;
+}
+
+.step-label {
+  margin-left: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #3b83f7;
+}
+
+/* Title Area */
+.title-area {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.8);
+}
+
+.subtitle {
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+}
+
+/* Action Cards */
+.action-cards {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+  justify-content: center;
+}
+
+.action-card {
+  flex: 0 0 280px;
+  height: 320px;
+  background: #18181b;
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: 1px solid transparent;
+  text-decoration: none;
+}
+
+.action-card:hover {
+  background: rgba(24,24,27,0.8);
+  border-color: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+
+.action-card.featured {
+  border-color: rgba(59,131,247,0.25);
+}
+
+.action-card.featured:hover {
+  border-color: rgba(59,131,247,0.4);
+}
+
+.card-icon {
+  flex-shrink: 0;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+}
+
+.card-desc {
+  font-size: 13px;
+  line-height: 1.6;
+  color: rgba(255,255,255,0.45);
+  text-align: center;
+}
+
+.card-action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+  margin-top: auto;
+}
+
+.action-card.featured .card-action {
+  color: #3b83f7;
+}
+
+.action-card:hover .card-action {
+  color: rgba(255,255,255,0.7);
+}
+
+.action-card.featured:hover .card-action {
+  color: #4a8fff;
+}
+
+/* Hint Text */
+.hint-text {
+  font-size: 12px;
+  color: rgba(255,255,255,0.2);
+  text-align: center;
+}
+
+/* Bottom Buttons */
+.bottom-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.btn-prev {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: transparent;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+.btn-prev:hover {
+  color: rgba(255,255,255,0.8);
+}

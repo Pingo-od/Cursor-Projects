@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>快速体验 - 天禧 Claw</title>
+  <link rel="stylesheet" href="07-onboarding-quickstart.css">
+</head>
+<body>
+  <div class="app-window">
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-bar-left">
+        <div class="logo-area">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <circle cx="12" cy="12" r="10" fill="#3b83f7" opacity="0.2"/>
+            <path d="M12 6V18M6 12H18" stroke="#3b83f7" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="window-controls">
+        <button class="icon-btn close-red">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <circle cx="6" cy="6" r="6" fill="#ff5f57"/>
+          </svg>
+        </button>
+        <button class="icon-btn min-yellow">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <circle cx="6" cy="6" r="6" fill="#febc2e"/>
+          </svg>
+        </button>
+        <button class="icon-btn max-green">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <circle cx="6" cy="6" r="6" fill="#28c840"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="body">
+      <!-- Step Indicator -->
+      <div class="step-indicator">
+        <div class="step-dot gray"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <div class="step-line blue"></div>
+        <div class="step-dot blue active"></div>
+        <span class="step-label">Step 5 / 5</span>
+      </div>
+
+      <!-- Title Area -->
+      <div class="title-area">
+        <h1 class="title">快速体验</h1>
+        <p class="subtitle">选择一个任务开始你的第一次对话</p>
+      </div>
+
+      <!-- Quick Action Cards -->
+      <div class="action-cards">
+        <a href="10-claw.html?effect=a" class="action-card featured">
+          <div class="card-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <circle cx="28" cy="28" r="24" fill="rgba(59,131,247,0.15)"/>
+              <path d="M20 28H36M28 20V36" stroke="#3b83f7" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="card-title">生成周报</h3>
+          <p class="card-desc">根据本周工作内容，自动生成结构化的周报文档</p>
+          <div class="card-action">
+            <span>开始体验</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
+
+        <a href="10-claw.html?effect=a" class="action-card">
+          <div class="card-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <circle cx="28" cy="28" r="24" fill="rgba(255,255,255,0.08)"/>
+              <path d="M22 24H34M22 28H34M22 32H30" stroke="rgba(255,255,255,0.5)" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3 class="card-title">制定计划</h3>
+          <p class="card-desc">帮你分析目标，制定可执行的行动计划和时间表</p>
+          <div class="card-action">
+            <span>开始体验</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
+
+        <a href="10-claw.html?effect=a" class="action-card">
+          <div class="card-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+              <circle cx="28" cy="28" r="24" fill="rgba(255,255,255,0.08)"/>
+              <rect x="20" y="22" width="16" height="12" rx="2" stroke="rgba(255,255,255,0.5)" stroke-width="3"/>
+              <path d="M24 22V20C24 18.9 24.9 18 26 18H30C31.1 18 32 18.9 32 20V22" stroke="rgba(255,255,255,0.5)" stroke-width="3"/>
+            </svg>
+          </div>
+          <h3 class="card-title">总结文档</h3>
+          <p class="card-desc">快速提取长文档的核心要点，生成简洁的摘要</p>
+          <div class="card-action">
+            <span>开始体验</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      <!-- Hint Text -->
+      <p class="hint-text">点击任意卡片即可完成开箱，进入主页面并自动发起对话</p>
+
+      <!-- Bottom Buttons -->
+      <div class="bottom-buttons">
+        <a href="06-onboarding-access.html" class="btn-prev">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M10 4L6 8L10 12" stroke="rgba(255,255,255,0.8)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>上一步</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

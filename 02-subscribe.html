@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>天禧 Claw — 订阅</title>
+  <link rel="stylesheet" href="02-subscribe.css" />
+</head>
+<body>
+  <div class="app-window">
+
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-bar-left">
+        <div class="nav-actions">
+          <button class="icon-btn nav-btn">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M7.5 2L3.5 6L7.5 10" stroke="rgba(255,255,255,0.8)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <button class="icon-btn nav-btn disabled">
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M4.5 2L8.5 6L4.5 10" stroke="rgba(255,255,255,0.32)" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+        <div class="tabs">
+          <div class="tab">
+            <svg class="tab-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 5.5L7 1.5L12.5 5.5V12.5H9V9H5V12.5H1.5V5.5Z" stroke="rgba(255,255,255,0.8)" stroke-width="1.2" stroke-linejoin="round"/></svg>
+            <span>主页</span>
+            <div class="tab-sep"></div>
+          </div>
+          <div class="tab">
+            <svg class="tab-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.5" stroke="rgba(255,255,255,0.8)" stroke-width="1.2"/><path d="M7 4.5V7.5" stroke="rgba(255,255,255,0.8)" stroke-width="1.2" stroke-linecap="round"/><circle cx="7" cy="9.5" r="0.6" fill="rgba(255,255,255,0.8)"/></svg>
+            <span>设置</span>
+            <div class="tab-sep light"></div>
+          </div>
+          <div class="tab tab-active">
+            <svg class="tab-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"><rect x="1.5" y="1.5" width="11" height="11" rx="3" stroke="rgba(255,255,255,0.8)" stroke-width="1.2"/><path d="M4.5 7H9.5M7 4.5V9.5" stroke="rgba(255,255,255,0.8)" stroke-width="1.2" stroke-linecap="round"/></svg>
+            <span>天禧 Claw</span>
+          </div>
+        </div>
+      </div>
+      <div class="window-controls">
+        <div class="account-pill">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="6" r="3" stroke="rgba(255,255,255,0.8)" stroke-width="1.2"/><path d="M2 13c0-2.5 2.7-4 6-4s6 1.5 6 4" stroke="rgba(255,255,255,0.8)" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2.5 4L5 6.5L7.5 4" stroke="rgba(255,255,255,0.8)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <button class="icon-btn" title="置顶">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1V9M4 4L7 1L10 4M3 13H11" stroke="rgba(255,255,255,0.8)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="icon-btn" title="最小化">
+          <svg width="14" height="1.4" viewBox="0 0 14 1.4"><line x1="0" y1="0.7" x2="14" y2="0.7" stroke="rgba(255,255,255,0.8)" stroke-width="1.4"/></svg>
+        </button>
+        <button class="icon-btn" title="窗口化">
+          <svg width="13" height="13" viewBox="0 0 13 13" fill="none"><rect x="0.6" y="0.6" width="11.8" height="11.8" rx="2" stroke="rgba(255,255,255,0.8)" stroke-width="1.2"/></svg>
+        </button>
+        <button class="icon-btn close-btn" title="关闭">
+          <svg width="10.4" height="10.4" viewBox="0 0 10.4 10.4" fill="none"><path d="M1 1L9.4 9.4M9.4 1L1 9.4" stroke="rgba(255,255,255,0.8)" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <div class="tab-bar-divider"></div>
+    </div>
+
+    <!-- Body -->
+    <div class="body">
+      <h1 class="title">选择你的计划</h1>
+      <p class="subtitle">解锁全部虾的能力，随时取消</p>
+
+      <!-- Billing Toggle -->
+      <div class="billing-toggle">
+        <div class="toggle-option active">月付</div>
+        <div class="toggle-option">
+          <span>年付</span>
+          <span class="save-badge">省20%</span>
+        </div>
+      </div>
+
+      <!-- Plans -->
+      <div class="plans">
+        <!-- Free Plan -->
+        <div class="plan-card">
+          <div class="plan-name">免费版</div>
+          <div class="plan-price">¥0<span>/月</span></div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>基础对话功能</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>1 只虾</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>每日 20 次对话</span>
+            </div>
+          </div>
+          <a href="01-welcome.html" class="plan-btn current">当前计划</a>
+        </div>
+
+        <!-- Pro Plan -->
+        <div class="plan-card featured">
+          <div class="plan-header">
+            <div class="plan-name">专业版</div>
+            <div class="recommended-badge">推荐</div>
+          </div>
+          <div class="plan-price pro">¥39<span>/月</span></div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>所有免费版功能</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>3 只虾同时运行</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>无限对话次数</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>定时任务</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>产物管理</span>
+            </div>
+          </div>
+          <a href="01-welcome.html" class="plan-btn primary">立即升级</a>
+        </div>
+
+        <!-- Team Plan -->
+        <div class="plan-card">
+          <div class="plan-name">团队版</div>
+          <div class="plan-price">¥99<span>/月起</span></div>
+          <div class="plan-features">
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>所有专业版功能</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>团队协作</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>统一管理</span>
+            </div>
+            <div class="feature-item">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8L6.5 11.5L13 5" stroke="#3b83f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>优先支持</span>
+            </div>
+          </div>
+          <a href="01-welcome.html" class="plan-btn outline">联系我们</a>
+        </div>
+      </div>
+
+      <p class="disclaimer">所有套餐均支持随时取消，不收取额外费用。价格含税，按月计费。</p>
+    </div>
+
+  </div>
+
+  <script>
+    // 月付/年付切换
+    document.querySelectorAll('.toggle-option').forEach(opt => {
+      opt.addEventListener('click', function() {
+        document.querySelectorAll('.toggle-option').forEach(o => o.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

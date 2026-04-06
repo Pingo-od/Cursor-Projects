@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>天禧 Claw</title>
+  <link rel="stylesheet" href="10-claw.css" />
+</head>
+<body>
+  <div class="app-window">
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-bar-left">
+        <!-- 操作区 -->
+        <div class="nav-actions">
+          <button class="icon-btn nav-btn" title="后退">
+            <img src="https://www.figma.com/api/mcp/asset/c3643b27-7f0b-49eb-9f8f-3afc2e792e86" alt="后退" />
+          </button>
+          <button class="icon-btn nav-btn" title="前进">
+            <img src="https://www.figma.com/api/mcp/asset/c3643b27-7f0b-49eb-9f8f-3afc2e792e86" alt="前进" />
+          </button>
+        </div>
+        <!-- 标签区 -->
+        <div class="tabs">
+          <a class="tab tab-link" href="09-home.html">
+            <div class="tab-icon-home">
+              <img src="https://www.figma.com/api/mcp/asset/6807f198-cade-4372-aa68-d7c4707d4573" alt="" class="tab-home-icon" />
+            </div>
+            <span>主页</span>
+            <div class="tab-divider"></div>
+          </a>
+          <div class="tab tab-active">
+            <div class="tab-icon-claw">
+              <img src="https://www.figma.com/api/mcp/asset/8d960cab-7ce1-4f6b-b666-85f1843a7249" alt="天禧 Claw" />
+            </div>
+            <span>天禧 Claw</span>
+          </div>
+        </div>
+      </div>
+      <!-- 全局操作 -->
+      <div class="window-controls">
+        <div class="account-btn">
+          <img src="https://www.figma.com/api/mcp/asset/7b18178a-f491-4973-a38d-dff850d47684" alt="账号" class="account-icon" />
+          <img src="https://www.figma.com/api/mcp/asset/ba27fab9-6a51-470f-b09d-aca1c9054e46" alt="展开" class="dropdown-icon" />
+        </div>
+        <button class="icon-btn" title="置顶">
+          <img src="https://www.figma.com/api/mcp/asset/a2e9498a-1c88-4957-a835-00b6ad7a097a" alt="置顶" />
+        </button>
+        <button class="icon-btn" title="最小化">
+          <img src="https://www.figma.com/api/mcp/asset/b5918cc5-fe0f-4dbf-9ce4-a3e841c6e1c1" alt="最小化" />
+        </button>
+        <button class="icon-btn" title="窗口化">
+          <img src="https://www.figma.com/api/mcp/asset/d6755e6d-d9e4-4a78-b798-e1e102895646" alt="窗口化" />
+        </button>
+        <button class="icon-btn close-btn" title="关闭">
+          <img src="https://www.figma.com/api/mcp/asset/b953111f-5dfe-44ba-950d-2ddb59440ca3" alt="关闭" />
+        </button>
+      </div>
+      <div class="tab-bar-divider"></div>
+    </div>
+
+    <!-- Main Layout -->
+    <div class="main-layout">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar-search">
+          <img src="https://www.figma.com/api/mcp/asset/2ce15bf9-731a-4466-8da7-614b69bf9932" alt="搜索" class="search-icon" />
+          <span>搜索</span>
+        </div>
+        <button class="sidebar-new-btn">
+          <img src="https://www.figma.com/api/mcp/asset/1032a54a-c517-4ef7-acd2-865b0afff264" alt="新建" class="new-icon" />
+          <span>新建agent</span>
+        </button>
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-agent">
+          <div class="agent-info">
+            <div class="agent-avatar">
+              <img src="https://www.figma.com/api/mcp/asset/54da8d20-9a5b-4e76-a475-9aa276cecbcc" alt="天禧Claw" />
+            </div>
+            <span>天禧Claw</span>
+          </div>
+          <img src="https://www.figma.com/api/mcp/asset/5524c25b-953f-4608-9599-323165d19cb1" alt="展开" class="expand-icon" />
+        </div>
+        <div class="sidebar-bottom">
+          <a class="sidebar-nav-item" href="#">
+            <img src="https://www.figma.com/api/mcp/asset/fcc29e8c-1c79-4ccb-998d-01ad2b0a587c" alt="技能广场" class="nav-icon" />
+            <span>技能广场</span>
+          </a>
+          <a class="sidebar-nav-item" href="#">
+            <img src="https://www.figma.com/api/mcp/asset/4d015307-c433-401b-8920-804c98951ec3" alt="定时任务" class="nav-icon" />
+            <span>定时任务</span>
+          </a>
+          <a class="sidebar-nav-item" href="#">
+            <img src="https://www.figma.com/api/mcp/asset/934e1662-eb68-4433-b185-4a143707ac3a" alt="设置" class="nav-icon" />
+            <span>设置</span>
+          </a>
+        </div>
+        <div class="sidebar-border"></div>
+      </aside>
+
+      <!-- Content Area -->
+      <main class="content-area">
+        <!-- Top right tip -->
+        <div class="top-tip">
+          <button class="handbook-btn">
+            <img src="https://www.figma.com/api/mcp/asset/d9f16f6f-105d-4b71-addb-560d0e0cdad6" alt="手册" class="handbook-icon" />
+            <span>玩转手册</span>
+          </button>
+          <button class="icon-btn help-btn">
+            <img src="https://www.figma.com/api/mcp/asset/82d0125a-826a-43f2-8bbb-5b6165dab043" alt="帮助" />
+          </button>
+        </div>
+
+        <!-- Center Content -->
+        <div class="center-content">
+          <!-- Hero -->
+          <div class="hero">
+            <div class="logo-wrap">
+              <div class="logo-img">
+                <img src="https://www.figma.com/api/mcp/asset/a0d9aa18-149a-4aa4-9d6d-c3a3ce128c8a" alt="天禧 Claw" />
+              </div>
+              <div class="beta-badge">Beta</div>
+            </div>
+            <div class="logo-text">
+              <img src="https://www.figma.com/api/mcp/asset/d7f0ca2d-dd47-408f-a127-84d89e80fc34" alt="天禧" />
+            </div>
+            <p class="hero-subtitle">7x24 小时，随时随地召唤的 AI 专属队友</p>
+          </div>
+
+          <div class="quick-cards">
+            <div class="quick-card">
+              <img src="https://www.figma.com/api/mcp/asset/e96c0b53-c5e2-4632-803b-a4a105f2d34d" alt="快速入门" class="card-icon-img" />
+              <div class="card-text">
+                <div class="card-title">快速入门</div>
+                <div class="card-desc">给我一份完整的使用入门指南</div>
+              </div>
+            </div>
+            <div class="quick-card">
+              <img src="https://www.figma.com/api/mcp/asset/c10e41aa-2d1f-4a70-b1be-bb364de64f8f" alt="介绍特性" class="card-icon-img" />
+              <div class="card-text">
+                <div class="card-title">介绍特性</div>
+                <div class="card-desc">你和其他 AI 助手比，有什么不同</div>
+              </div>
+            </div>
+            <div class="quick-card">
+              <img src="https://www.figma.com/api/mcp/asset/3a8859e6-96db-43d5-a1ed-9b08e03bce8c" alt="记忆偏好" class="card-icon-img" />
+              <div class="card-text">
+                <div class="card-title">记忆偏好</div>
+                <div class="card-desc">你能长期记住我的个人偏好吗</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Input Box -->
+        <div class="input-area">
+          <div class="input-glow-blur"></div>
+          <div class="input-glow-solid"></div>
+          <div class="input-box">
+            <div class="input-field">
+              <div class="input-cursor"></div>
+              <span class="input-placeholder">输入任务描述或提问任何问题</span>
+            </div>
+            <div class="input-toolbar">
+              <div class="toolbar-icons">
+                <button class="icon-btn" title="文件">
+                  <img src="https://www.figma.com/api/mcp/asset/579c07f7-cf38-49b5-babe-7c4d469679a0" alt="文件" />
+                </button>
+                <button class="icon-btn" title="图片">
+                  <img src="https://www.figma.com/api/mcp/asset/c3f481e9-53d0-4f83-9581-eacde22d099f" alt="图片" />
+                </button>
+                <button class="icon-btn" title="语音">
+                  <img src="https://www.figma.com/api/mcp/asset/3d725e17-4df7-4542-b38b-c972999511e9" alt="语音" />
+                </button>
+                <div class="toolbar-divider"></div>
+              </div>
+              <button class="send-btn">
+                <img src="https://www.figma.com/api/mcp/asset/7dfe3017-0501-4b87-b131-d50f9b57f2bd" alt="发送" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <!-- Effect A: 全屏欢迎动画 -->
+  <div id="effect-a" class="effect-overlay effect-hidden">
+    <div class="effect-a-content">
+      <div class="effect-a-logo">
+        <img src="https://www.figma.com/api/mcp/asset/a0d9aa18-149a-4aa4-9d6d-c3a3ce128c8a" alt="天禧 Claw" />
+      </div>
+      <div class="effect-a-title">欢迎使用天禧 Claw</div>
+      <div class="effect-a-subtitle">你的 AI 专属队友已就位</div>
+      <div class="effect-a-dots">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var params = new URLSearchParams(window.location.search);
+      var effect = params.get('effect');
+
+      if (effect === 'a') {
+        var overlay = document.getElementById('effect-a');
+        var appWindow = document.querySelector('.app-window');
+        // 显示 overlay，隐藏主界面
+        overlay.classList.remove('effect-hidden');
+        appWindow.style.opacity = '0';
+        // 2秒后淡出 overlay，淡入主界面
+        setTimeout(function() {
+          overlay.classList.add('fade-out');
+          appWindow.style.transition = 'opacity 0.8s ease';
+          appWindow.style.opacity = '1';
+          setTimeout(function() { overlay.remove(); }, 900);
+        }, 2200);
+
+      } else if (effect === 'b') {
+        var targets = [
+          '.tab-bar',
+          '.sidebar',
+          '.top-tip',
+          '.hero',
+          '.quick-cards',
+          '.input-area'
+        ];
+        targets.forEach(function(sel, i) {
+          var el = document.querySelector(sel);
+          if (!el) return;
+          el.style.opacity = '0';
+          el.style.transform = 'translateY(24px)';
+          setTimeout(function() {
+            el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0)';
+          }, 150 + i * 150);
+        });
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>选择你的虾 - 天禧 Claw</title>
+  <link rel="stylesheet" href="03-onboarding-select.css">
+</head>
+<body>
+  <div class="app-window">
+    <!-- Tab Bar -->
+    <div class="tab-bar">
+      <div class="tab-bar-left">
+        <div class="nav-actions">
+          <button class="icon-btn disabled">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M10 12L6 8L10 4" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <button class="icon-btn disabled">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path d="M6 12L10 8L6 4" stroke="rgba(255,255,255,0.4)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+        <div class="tabs">
+          <div class="tab tab-active">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+              <path d="M7 1L9 5L13 5.5L10 8.5L10.5 13L7 11L3.5 13L4 8.5L1 5.5L5 5L7 1Z" fill="rgba(255,255,255,0.6)"/>
+            </svg>
+            <span>开箱引导</span>
+          </div>
+        </div>
+      </div>
+      <div class="window-controls">
+        <div class="account-pill">
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <circle cx="7" cy="5" r="2.5" stroke="rgba(255,255,255,0.5)" stroke-width="1.2"/>
+            <path d="M2 12C2 9.5 4 8 7 8C10 8 12 9.5 12 12" stroke="rgba(255,255,255,0.5)" stroke-width="1.2" stroke-linecap="round"/>
+          </svg>
+          <span>未登录</span>
+        </div>
+        <button class="icon-btn">
+          <svg width="12" height="2" viewBox="0 0 12 2" fill="none">
+            <rect width="12" height="2" rx="1" fill="rgba(255,255,255,0.6)"/>
+          </svg>
+        </button>
+        <button class="icon-btn close-btn">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none">
+            <path d="M1 1L9 9M9 1L1 9" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="tab-bar-divider"></div>
+    </div>
+
+    <!-- Body -->
+    <div class="body">
+      <!-- Step Indicator -->
+      <div class="step-indicator">
+        <div class="step-dot blue active"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <div class="step-line gray"></div>
+        <div class="step-dot gray"></div>
+        <span class="step-label">Step 1 / 5</span>
+      </div>
+
+      <!-- Title Area -->
+      <div class="title-area">
+        <h1 class="title">选择你的虾</h1>
+        <p class="subtitle">虾是你的 AI 助手，每只虾有不同的专长</p>
+      </div>
+
+      <!-- Shrimp Cards Grid -->
+      <div class="shrimp-grid">
+        <div class="shrimp-row">
+          <div class="shrimp-card selected">
+            <div class="shrimp-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="#3b83f7" opacity="0.15"/>
+                <path d="M24 14V34M14 24H34" stroke="#3b83f7" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="shrimp-info">
+              <h3 class="shrimp-name">通用助手</h3>
+              <p class="shrimp-desc">适合日常对话、问答和各类通用任务</p>
+            </div>
+            <div class="check-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <circle cx="10" cy="10" r="10" fill="#3b83f7"/>
+                <path d="M6 10L9 13L14 7" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="shrimp-card">
+            <div class="shrimp-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="rgba(255,255,255,0.08)"/>
+                <path d="M18 24L22 28L30 18" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="shrimp-info">
+              <h3 class="shrimp-name">代码助手</h3>
+              <p class="shrimp-desc">专注于编程、调试和技术问题解答</p>
+            </div>
+          </div>
+
+          <div class="shrimp-card">
+            <div class="shrimp-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="rgba(255,255,255,0.08)"/>
+                <path d="M20 18H28M20 24H28M20 30H24" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="shrimp-info">
+              <h3 class="shrimp-name">写作助手</h3>
+              <p class="shrimp-desc">帮助你撰写文章、邮件和各类文档</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="shrimp-row">
+          <div class="shrimp-card">
+            <div class="shrimp-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="rgba(255,255,255,0.08)"/>
+                <path d="M16 28L24 20L32 28" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="shrimp-info">
+              <h3 class="shrimp-name">数据分析</h3>
+              <p class="shrimp-desc">处理数据、生成图表和统计分析</p>
+            </div>
+          </div>
+
+          <div class="shrimp-card">
+            <div class="shrimp-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="rgba(255,255,255,0.08)"/>
+                <circle cx="24" cy="24" r="6" stroke="rgba(255,255,255,0.4)" stroke-width="3"/>
+                <path d="M24 14V18M24 30V34M34 24H30M18 24H14" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="shrimp-info">
+              <h3 class="shrimp-name">创意设计</h3>
+              <p class="shrimp-desc">提供设计灵感和创意建议</p>
+            </div>
+          </div>
+
+          <div class="shrimp-card">
+            <div class="shrimp-icon">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                <circle cx="24" cy="24" r="20" fill="rgba(255,255,255,0.08)"/>
+                <path d="M18 22C18 19 20 17 24 17C28 17 30 19 30 22C30 24 29 25 27 26L24 28V30M24 34V34.5" stroke="rgba(255,255,255,0.4)" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="shrimp-info">
+              <h3 class="shrimp-name">学习辅导</h3>
+              <p class="shrimp-desc">解答学习问题，提供知识讲解</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Actions -->
+      <div class="bottom-actions">
+        <span class="count-hint">已选 1/3</span>
+        <a href="04-onboarding-config.html" class="btn-next">
+          <span>下一步</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll('.shrimp-card');
+    const countHint = document.querySelector('.count-hint');
+    const MAX = 3;
+
+    function updateCount() {
+      const selected = document.querySelectorAll('.shrimp-card.selected').length;
+      countHint.textContent = `已选 ${selected}/3`;
+    }
+
+    cards.forEach((card, index) => {
+      // 第一张（日常虾）固定选中，不可取消
+      if (index === 0) return;
+
+      card.addEventListener('click', function() {
+        const isSelected = this.classList.contains('selected');
+        const currentCount = document.querySelectorAll('.shrimp-card.selected').length;
+
+        if (isSelected) {
+          this.classList.remove('selected');
+        } else if (currentCount < MAX) {
+          this.classList.add('selected');
+        }
+        updateCount();
+      });
+    });
+  </script>
+</body>
+</html>
