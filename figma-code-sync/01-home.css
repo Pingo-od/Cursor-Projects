@@ -68,13 +68,14 @@ body {
 }
 .icon-btn:hover { background: rgba(255,255,255,0.08); }
 .icon-btn img { width: 16px; height: 16px; object-fit: contain; }
+.icon-btn svg { width: 16px; height: 16px; }
 
-.nav-btn img { width: 11px; height: 11px; }
-.nav-back img { transform: rotate(180deg); }
+.nav-actions svg { width: 12px; height: 12px; }
 
 .tabs {
   display: flex;
   align-items: center;
+  gap: 4px;
   flex: 1;
 }
 
@@ -89,10 +90,30 @@ body {
   font-size: 12px;
   color: rgba(255,255,255,0.8);
   position: relative;
+  transition: background 0.15s;
+  flex: 1;
+  max-width: 160px;
 }
+.tab:hover { background: rgba(255,255,255,0.05); }
 .tab-active {
   background: rgba(255,255,255,0.08);
   border: 0.5px solid rgba(255,255,255,0.08);
+}
+.tab-icon {
+  width: 14px;
+  height: 14px;
+}
+.tab-sep {
+  position: absolute;
+  right: 0;
+  top: 7.5px;
+  width: 1px;
+  height: 17px;
+  background: rgba(0,0,0,0.16);
+  border-radius: 4px;
+}
+.tab-sep.light {
+  background: rgba(255,255,255,0.16);
 }
 .tab-divider {
   position: absolute;
@@ -102,33 +123,6 @@ body {
   border-radius: 4px;
 }
 
-/* Tab icons (home) */
-.tab-icon-home {
-  width: 18px; height: 18px;
-  position: relative;
-  flex-shrink: 0;
-}
-.tab-home-v1, .tab-home-v2, .tab-home-v3 {
-  position: absolute;
-  object-fit: contain;
-}
-.tab-home-v1 { width: 12px; height: 10px; top: 2px; left: 3px; }
-.tab-home-v2 { width: 4px; height: 4px; bottom: 2px; left: 7px; }
-.tab-home-v3 { width: 12px; height: 2px; bottom: 2px; left: 3px; }
-
-/* Tab icons (settings) */
-.tab-icon-settings {
-  width: 18px; height: 18px;
-  position: relative;
-  flex-shrink: 0;
-}
-.tab-settings-v1, .tab-settings-v2 {
-  position: absolute;
-  object-fit: contain;
-}
-.tab-settings-v1 { width: 14px; height: 14px; top: 2px; left: 2px; }
-.tab-settings-v2 { width: 6px; height: 6px; top: 6px; left: 6px; }
-
 /* Window Controls */
 .window-controls {
   display: flex;
@@ -137,19 +131,19 @@ body {
   flex-shrink: 0;
   padding-left: 64px;
 }
-.account-btn {
+.account-pill {
   display: flex;
   align-items: center;
   gap: 2px;
   height: 28px;
   padding: 4px;
+  border-radius: 100px;
   background: rgba(255,255,255,0.08);
   border: 0.5px solid rgba(255,255,255,0.08);
-  border-radius: 100px;
   cursor: pointer;
 }
-.account-icon { width: 20px; height: 20px; }
-.dropdown-icon { width: 6px; height: 4px; }
+.account-pill svg:first-child { width: 16px; height: 16px; }
+.account-pill svg:last-child { width: 10px; height: 10px; }
 .close-btn:hover { background: rgba(255,70,70,0.3); }
 .tab-bar-divider {
   position: absolute;
@@ -209,9 +203,13 @@ body {
   justify-content: center;
   border-radius: 12px;
   transition: background 0.15s;
+  text-decoration: none;
+}
+.sidebar-icon-item, .sidebar-icon-item a {
+  color: inherit;
 }
 .sidebar-icon-item:hover { background: rgba(255,255,255,0.08); }
-.sidebar-icon-item img { width: 18px; height: 18px; object-fit: contain; }
+.sidebar-icon-item img, .sidebar-icon-item svg { width: 18px; height: 18px; }
 
 .new-btn {
   background: rgba(255,255,255,0.08);
@@ -232,7 +230,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 154px 4px;
+  padding: 80px 154px 4px;
   position: relative;
   overflow-y: auto;
   gap: 40px;
@@ -309,6 +307,10 @@ body {
   backdrop-filter: blur(15px);
   box-shadow: 0 0 20px rgba(0,0,0,0.06);
   transition: background 0.15s;
+  text-decoration: none;
+}
+.feature-tag, .feature-tag a {
+  color: inherit;
 }
 .feature-tag:hover { background: rgba(255,255,255,0.08); }
 .feature-tag.active { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.9); }
@@ -479,7 +481,7 @@ body {
   transition: background 0.15s;
   overflow: hidden;
 }
-.tool-btn img { width: 16px; height: 16px; object-fit: contain; }
+.tool-btn svg, .tool-btn-img svg { width: 28px; height: 28px; }
 .tool-btn:hover { background: rgba(255,255,255,0.08); }
 
 .toolbar-divider {
@@ -500,7 +502,7 @@ body {
   justify-content: center;
   transition: background 0.15s;
 }
-.send-btn img { width: 24px; height: 24px; object-fit: contain; }
+.send-btn svg { width: 18px; height: 18px; }
 .send-btn:hover { background: rgba(255,255,255,0.15); }
 
 /* ===== Scroll Tip ===== */

@@ -72,9 +72,9 @@ body {
 }
 
 .icon-btn:hover { background: rgba(255, 255, 255, 0.08); }
-.icon-btn img { width: 16px; height: 16px; object-fit: contain; }
-
-.nav-btn img { width: 11px; height: 11px; }
+.icon-btn img, .icon-btn svg { width: 16px; height: 16px; }
+.nav-btn svg { width: 12px; height: 12px; }
+.nav-btn.disabled svg { opacity: 0.4; }
 
 /* Tabs */
 .tabs {
@@ -108,44 +108,29 @@ body {
   border: 0.5px solid rgba(255, 255, 255, 0.08);
 }
 
-.tab-divider {
+.tab-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
+.tab-sep {
   position: absolute;
   right: 0;
   top: 7.5px;
   width: 1px;
   height: 17px;
-  background: rgba(255, 255, 255, 0.16);
+  background: rgba(0, 0, 0, 0.16);
   border-radius: 4px;
 }
 
-.tab-icon-home {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.tab-sep.light {
+  background: rgba(255, 255, 255, 0.16);
 }
 
-.tab-home-icon {
-  width: 14px;
-  height: 14px;
-  object-fit: contain;
-}
-
-.tab-icon-claw {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.tab-icon-claw img {
-  width: 14px;
-  height: 14px;
-  object-fit: contain;
+.tab-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* Window Controls */
@@ -157,7 +142,7 @@ body {
   padding-left: 64px;
 }
 
-.account-btn {
+.account-pill {
   display: flex;
   align-items: center;
   gap: 2px;
@@ -169,8 +154,8 @@ body {
   cursor: pointer;
 }
 
-.account-icon { width: 20px; height: 20px; }
-.dropdown-icon { width: 18px; height: 18px; object-fit: contain; }
+.account-pill svg:first-child { width: 16px; height: 16px; }
+.account-pill svg:last-child { width: 10px; height: 10px; }
 .close-btn:hover { background: rgba(255, 70, 70, 0.3); }
 
 .tab-bar-divider {
