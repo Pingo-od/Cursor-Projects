@@ -1,13 +1,20 @@
-# figma-code-sync
+# Cursor-Projects
 
-Figma 导出的静态页面（HTML/CSS）。
+本仓库用于存放 **Cursor Projects** 下的设计/演示项目。
+
+## 项目
+
+| 目录 | 说明 |
+|------|------|
+| [`figma-code-sync/`](figma-code-sync/) | Figma 导出的静态页面（HTML/CSS），入口见该目录下 `index.html`。 |
 
 ## 在线演示（GitHub Pages）
 
-**公开地址：** [https://pingo-od.github.io/Cursor-Projects/](https://pingo-od.github.io/Cursor-Projects/)
+开启 **Settings → Pages** 为 **`main` + `/ (root)`** 后：
 
-根路径 `index.html` 会进入 **`01-welcome.html`** 流程；也可直接打开各屏，例如 `02-subscribe.html`、`09-home.html`、`10-claw.html`。
+- **演示首页（推荐）：** [https://pingo-od.github.io/Cursor-Projects/figma-code-sync/](https://pingo-od.github.io/Cursor-Projects/figma-code-sync/)  
+- 仓库根路径会跳到上述演示：[https://pingo-od.github.io/Cursor-Projects/](https://pingo-od.github.io/Cursor-Projects/)
 
-若打不开或 404，请到仓库 **Settings → Pages**，将 **Source** 设为 **Deploy from a branch**，**Branch** 选 **`main`**，**Folder** 选 **`/ (root)`**，保存后等待 1～5 分钟再试。
+若 404，请确认 Pages 已保存并等待数分钟。
 
-**源码仓库：** [github.com/Pingo-od/Cursor-Projects](https://github.com/Pingo-od/Cursor-Projects)
+**源码：** [github.com/Pingo-od/Cursor-Projects](https://github.com/Pingo-od/Cursor-Projects)
