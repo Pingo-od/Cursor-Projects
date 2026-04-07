@@ -216,8 +216,8 @@ body {
 .sidebar-new-btn {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  justify-content: flex-start;
+  gap: 8px;
   background: rgba(255, 255, 255, 0.06);
   border: 0.5px solid rgba(255, 255, 255, 0.16);
   border-radius: 12px;
