@@ -497,10 +497,10 @@ body {
   flex-shrink: 0;
 }
 
-.input-glow-blur {
+.input-glow-light {
   position: absolute;
-  inset: 0;
-  border-radius: 22px;
+  inset: -1px;
+  border-radius: 21px;
   filter: blur(30px);
   opacity: 0.7;
   background: conic-gradient(
@@ -519,23 +519,6 @@ body {
   );
 }
 
-.input-glow-solid {
-  position: absolute;
-  inset: 0;
-  border-radius: 22px;
-  background: conic-gradient(
-    from 90deg,
-    rgb(71, 134, 255) -0.87%,
-    rgb(70, 192, 255) 16.3%,
-    rgb(36, 212, 124) 34.66%,
-    rgb(255, 168, 0) 50.44%,
-    rgb(255, 70, 74) 59.04%,
-    rgb(255, 37, 99) 61.90%,
-    rgb(188, 88, 177) 75.09%,
-    rgb(71, 134, 255) 99.13%
-  );
-}
-
 .input-box {
   position: relative;
   z-index: 1;
@@ -547,10 +530,9 @@ body {
   flex-direction: column;
   gap: 20px;
   height: 172px;
-  overflow: hidden;
 }
 
-.input-field {
+.input-text-area {
   display: flex;
   align-items: flex-start;
   gap: 2px;
@@ -591,21 +573,73 @@ body {
   gap: 4px;
 }
 
-.toolbar-icons .icon-btn {
-  width: 28px;
-  height: 28px;
+.toolbar-left-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
-.toolbar-icons .icon-btn img {
-  width: 16px;
-  height: 16px;
+.model-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255,255,255,0.08);
+  border: 0.5px solid rgba(255,255,255,0.16);
+  border-radius: 200px;
+  padding: 5px 8px 5px 12px;
+  cursor: pointer;
 }
+.model-selector span {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+  white-space: nowrap;
+  line-height: 22px;
+}
+.model-switch-icon { width: 18px; height: 18px; object-fit: contain; }
+
+.deep-think-selector {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 5px 12px 5px 10px;
+  cursor: pointer;
+}
+.deep-think-selector span {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+  white-space: nowrap;
+  line-height: 22px;
+}
+.deep-think-icon { width: 18px; height: 18px; object-fit: contain; }
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tool-btn {
+  width: 28px; height: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background 0.15s;
+  overflow: hidden;
+}
+.tool-btn svg, .tool-btn-img svg { width: 28px; height: 28px; }
+.tool-btn:hover { background: rgba(255,255,255,0.08); }
 
 .toolbar-divider {
   width: 1px;
   height: 16px;
   background: rgba(255, 255, 255, 0.16);
-  margin: 0 4px;
+  margin-left: 4px;
   flex-shrink: 0;
 }
 
@@ -619,13 +653,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px;
   transition: background 0.15s;
   flex-shrink: 0;
 }
 
-.send-btn img { width: 24px; height: 24px; object-fit: contain; }
-.send-btn:hover { background: rgba(255, 255, 255, 0.14); }
+.send-btn svg { width: 18px; height: 18px; }
+.send-btn:hover { background: rgba(255,255,255,0.15); }
 
 /* ===== Effect A: 全屏欢迎动画 ===== */
 .effect-overlay {
