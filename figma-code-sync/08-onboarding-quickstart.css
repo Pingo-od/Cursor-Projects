@@ -6,12 +6,20 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'HYQiHei', sans-serif;
-  background: #000;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Desktop Background ===== */
+.desktop-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url('images/desktop-bg.png') center/cover no-repeat;
 }
 
 .app-window {
@@ -40,7 +48,29 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
+  flex: 1;
+  min-width: 0;
 }
+
+.nav-actions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.tabs { display: flex; gap: 4px; flex: 1; }
+.tab {
+  display: flex; align-items: center; gap: 6px;
+  height: 32px; padding: 0 10px; border-radius: 8px;
+  font-size: 12px; color: rgba(255,255,255,0.8);
+  cursor: pointer; transition: background 0.15s; position: relative; flex: 1; max-width: 200px; text-decoration: none;
+}
+.tab:hover { background: rgba(255,255,255,0.05); }
+.tab-active { background: rgba(255,255,255,0.08); border: 0.5px solid rgba(255,255,255,0.08); }
+.tab-icon { width: 14px; height: 14px; }
+.tab-sep { position: absolute; right: 0; top: 7.5px; width: 1px; height: 17px; background: rgba(0,0,0,0.16); border-radius: 4px; }
+.tab-bar-divider { position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: rgba(255,255,255,0.08); }
 
 .logo-area {
   display: flex;
@@ -50,12 +80,30 @@ body {
 .window-controls {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 4px;
+  flex-shrink: 0;
+  padding-left: 64px;
 }
 
+.account-pill {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  height: 28px;
+  padding: 4px;
+  border-radius: 100px;
+  background: rgba(255,255,255,0.08);
+  border: 0.5px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+}
+
+.account-pill svg:first-child { width: 16px; height: 16px; }
+.account-pill svg:last-child { width: 10px; height: 10px; }
+.close-btn:hover { background: rgba(255,70,70,0.3); }
+
 .icon-btn {
-  width: 12px;
-  height: 12px;
+  width: 32px;
+  height: 32px;
   border: none;
   background: transparent;
   padding: 0;
@@ -63,7 +111,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 6px;
+  transition: background 0.15s;
 }
+
+.icon-btn:hover { background: rgba(255,255,255,0.08); }
+.icon-btn img { width: 16px; height: 16px; object-fit: contain; }
 
 /* Body */
 .body {

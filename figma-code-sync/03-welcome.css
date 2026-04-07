@@ -6,12 +6,20 @@
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'HYQiHei', sans-serif;
-  background: #000;
+  background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
+}
+
+/* ===== Desktop Background ===== */
+.desktop-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: url('images/desktop-bg.png') center/cover no-repeat;
 }
 
 .app-window {
@@ -67,6 +75,8 @@ body {
   background: rgba(255,255,255,0.08);
 }
 
+.icon-btn img { width: 16px; height: 16px; object-fit: contain; }
+
 .icon-btn.disabled {
   opacity: 0.4;
   cursor: not-allowed;
@@ -95,6 +105,8 @@ body {
   transition: background 0.15s;
   position: relative;
   flex: 1;
+  max-width: 200px;
+  text-decoration: none;
 }
 
 .tab:hover {
