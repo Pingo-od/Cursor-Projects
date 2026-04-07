@@ -91,9 +91,14 @@ body {
   padding: 40px 40px 28px;
   gap: 20px;
   overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   max-width: 880px;
   margin: 0 auto;
   width: 100%;
+}
+.body::-webkit-scrollbar {
+  display: none;
 }
 
 /* Step Indicator */
@@ -146,6 +151,10 @@ body {
   background: rgba(255,255,255,0.02);
 }
 
+#blockList {
+  height: 197px;
+}
+
 .folder-item {
   display: flex; align-items: center; gap: 8px;
   padding: 10px 14px; font-size: 13px; color: rgba(255,255,255,0.7);
@@ -167,34 +176,6 @@ body {
   padding: 16px 14px; font-size: 12px;
   color: rgba(255,255,255,0.2); text-align: center;
 }
-
-/* Unknown Row */
-.unknown-row {
-  display: flex; align-items: center; justify-content: space-between;
-  width: 100%; background: rgba(255,255,255,0.03);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 10px; padding: 12px 16px;
-}
-
-.unknown-label {
-  display: flex; align-items: center; gap: 6px;
-  font-size: 13px; color: rgba(255,255,255,0.45);
-}
-
-.unknown-select {
-  display: flex; align-items: center; gap: 4px;
-  background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 8px; padding: 6px 10px; cursor: pointer;
-}
-
-.unknown-select select {
-  border: none; background: transparent;
-  font-size: 13px; color: rgba(255,255,255,0.7);
-  cursor: pointer; outline: none; font-family: inherit;
-  appearance: none; -webkit-appearance: none;
-}
-
-.unknown-select select option { background: #18181b; color: rgba(255,255,255,0.8); }
 
 /* Warning Note */
 .warning-note {

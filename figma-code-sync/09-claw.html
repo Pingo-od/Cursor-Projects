@@ -197,36 +197,39 @@
     </div>
   </div>
 
-  <!-- Effect A: 全屏欢迎动画 -->
-  <div id="effect-a" class="effect-overlay effect-hidden">
-    <div class="effect-a-content">
-      <div class="effect-a-logo">
-        <img src="https://www.figma.com/api/mcp/asset/a0d9aa18-149a-4aa4-9d6d-c3a3ce128c8a" alt="天禧 Claw" />
-      </div>
-      <div class="effect-a-title">欢迎使用天禧 Claw</div>
-      <div class="effect-a-subtitle">你的 AI 专属队友已就位</div>
-      <div class="effect-a-dots">
-        <span></span><span></span><span></span>
-      </div>
-    </div>
-  </div>
-
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       var params = new URLSearchParams(window.location.search);
       var effect = params.get('effect');
 
       if (effect === 'a') {
-        var overlay = document.getElementById('effect-a');
         var appWindow = document.querySelector('.app-window');
-        // 显示 overlay，隐藏主界面
-        overlay.classList.remove('effect-hidden');
-        appWindow.style.opacity = '0';
+        if (!appWindow) return;
+
+        // Effect A: 在客户端窗口内显示欢迎动画
+        var overlay = document.createElement('div');
+        overlay.id = 'effect-a';
+        overlay.className = 'effect-overlay';
+        overlay.innerHTML = '\
+          <div class="effect-a-content">\
+            <div class="effect-a-logo">\
+              <img src="https://www.figma.com/api/mcp/asset/a0d9aa18-149a-4aa4-9d6d-c3a3ce128c8a" alt="天禧 Claw" />\
+            </div>\
+            <div class="effect-a-title">欢迎使用天禧 Claw</div>\
+            <div class="effect-a-subtitle">你的 AI 专属队友已就位</div>\
+            <div class="effect-a-dots">\
+              <span></span><span></span><span></span>\
+            </div>\
+          </div>';
+
+        // 先隐藏主界面（但不影响 overlay）
+        appWindow.classList.add('effect-a-active');
+        appWindow.appendChild(overlay);
+
         // 2秒后淡出 overlay，淡入主界面
         setTimeout(function() {
           overlay.classList.add('fade-out');
-          appWindow.style.transition = 'opacity 0.8s ease';
-          appWindow.style.opacity = '1';
+          appWindow.classList.remove('effect-a-active');
           setTimeout(function() { overlay.remove(); }, 900);
         }, 2200);
 

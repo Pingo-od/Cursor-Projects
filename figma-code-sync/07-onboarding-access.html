@@ -75,40 +75,11 @@
       <!-- Title -->
       <div class="title-area">
         <h1 class="title">告诉 Claw 它可以去哪里</h1>
-        <p class="subtitle">设置 Claw 允许和不允许访问的文件夹</p>
-        <p class="subtitle">没有添加的地方，Claw 访问前会先问你</p>
+        <p class="subtitle">设置 Claw 不允许访问的文件夹</p>
       </div>
 
       <!-- Folder Lists -->
       <div class="folder-section">
-        <!-- Allow List -->
-        <div class="folder-col">
-          <div class="folder-col-header">
-            <div class="col-title allow">
-              <span class="dot green"></span>
-              允许访问的文件夹
-            </div>
-            <button class="add-btn">+ 添加</button>
-          </div>
-          <div class="folder-list" id="allowList">
-            <div class="folder-item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 4.5H12.5V11.5H1.5V4.5Z" stroke="#22c55e" stroke-width="1.2" stroke-linejoin="round"/><path d="M1.5 4.5L4 2.5H10L12.5 4.5" stroke="#22c55e" stroke-width="1.2" stroke-linejoin="round"/></svg>
-              <span>D:\工作文件夹</span>
-              <button class="remove-btn">×</button>
-            </div>
-            <div class="folder-item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 4.5H12.5V11.5H1.5V4.5Z" stroke="#22c55e" stroke-width="1.2" stroke-linejoin="round"/><path d="M1.5 4.5L4 2.5H10L12.5 4.5" stroke="#22c55e" stroke-width="1.2" stroke-linejoin="round"/></svg>
-              <span>C:\Users\用户名\Desktop</span>
-              <button class="remove-btn">×</button>
-            </div>
-            <div class="folder-item">
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1.5 4.5H12.5V11.5H1.5V4.5Z" stroke="#22c55e" stroke-width="1.2" stroke-linejoin="round"/><path d="M1.5 4.5L4 2.5H10L12.5 4.5" stroke="#22c55e" stroke-width="1.2" stroke-linejoin="round"/></svg>
-              <span>D:\项目资料</span>
-              <button class="remove-btn">×</button>
-            </div>
-          </div>
-        </div>
-
         <!-- Block List -->
         <div class="folder-col">
           <div class="folder-col-header">
@@ -129,22 +100,6 @@
         </div>
       </div>
 
-      <!-- Unknown Folders Row -->
-      <div class="unknown-row">
-        <div class="unknown-label">
-          <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.5" stroke="#999" stroke-width="1.2"/><path d="M7 4.5V7.5" stroke="#999" stroke-width="1.2" stroke-linecap="round"/><circle cx="7" cy="9.5" r="0.6" fill="#999"/></svg>
-          未在以上列表中的文件夹
-        </div>
-        <div class="unknown-select">
-          <select>
-            <option>访问前询问我</option>
-            <option>始终允许</option>
-            <option>始终拒绝</option>
-          </select>
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="#666" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
-      </div>
-
       <!-- Warning Note -->
       <div class="warning-note">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2L14.5 13H1.5L8 2Z" stroke="#d97706" stroke-width="1.3" stroke-linejoin="round"/><path d="M8 6V9" stroke="#d97706" stroke-width="1.3" stroke-linecap="round"/><circle cx="8" cy="11" r="0.7" fill="#d97706"/></svg>
@@ -153,10 +108,10 @@
 
       <!-- Bottom Buttons -->
       <div class="bottom-buttons">
-        <a href="09-claw.html" class="btn-skip">跳过此步骤</a>
+        <a href="09-claw.html?effect=a" class="btn-skip">跳过此步骤</a>
         <div class="btn-group">
           <a href="06-onboarding-permission.html" class="btn-prev">← 上一步</a>
-          <a href="09-claw.html" class="btn-next">完成设置，进入 Claw →</a>
+          <a href="09-claw.html?effect=a" class="btn-next">完成设置，进入 Claw →</a>
         </div>
       </div>
     </div>

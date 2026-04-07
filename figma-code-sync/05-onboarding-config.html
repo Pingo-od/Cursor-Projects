@@ -74,106 +74,104 @@
 
       <!-- Title Area -->
       <div class="title-area">
-        <h1 class="title">认识你的虾</h1>
-        <p class="subtitle">为你的虾设置名称和个性</p>
+        <h1 class="title">认识你的虾虾</h1>
+        <p class="subtitle">个性化设定，建立情感连接</p>
       </div>
 
-      <!-- Settings Area -->
-      <div class="settings-area">
-        <!-- Name Setting -->
-        <div class="setting-group">
-          <label class="setting-label">虾的名称</label>
-          <input type="text" class="setting-input" placeholder="给你的虾起个名字" value="小助手">
-        </div>
+      <!-- Quick Config (flatter structure, in-page) -->
+      <section class="qc-modal" aria-label="快速配置">
+        <div class="qc-section">
+          <div class="qc-field">
+            <label class="qc-label" for="userNickname">对你的称呼</label>
+            <input id="userNickname" class="qc-input" type="text" value="用户昵称" />
+          </div>
 
-        <!-- Personality Setting -->
-        <div class="setting-group">
-          <label class="setting-label">个性设置</label>
-          <div class="personality-options">
-            <button class="personality-btn active">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
-                <circle cx="7" cy="8" r="1.5" fill="currentColor"/>
-                <circle cx="13" cy="8" r="1.5" fill="currentColor"/>
-                <path d="M6 12C6 12 7.5 14 10 14C12.5 14 14 12 14 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-              <span>友好</span>
-            </button>
-            <button class="personality-btn">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
-                <circle cx="7" cy="8" r="1.5" fill="currentColor"/>
-                <circle cx="13" cy="8" r="1.5" fill="currentColor"/>
-                <path d="M6 13H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
-              <span>专业</span>
-            </button>
-            <button class="personality-btn">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
-                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
-                <circle cx="7" cy="8" r="1.5" fill="currentColor"/>
-                <circle cx="13" cy="8" r="1.5" fill="currentColor"/>
-                <path d="M7 12L10 15L13 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span>幽默</span>
-            </button>
+          <div class="qc-field">
+            <label class="qc-label" for="userIntro">介绍一下自己</label>
+            <textarea id="userIntro" class="qc-textarea" rows="3" placeholder="用户可输入（可留空）"></textarea>
           </div>
         </div>
 
-        <!-- Response Style -->
-        <div class="setting-group">
-          <label class="setting-label">回复风格</label>
-          <div class="style-options">
-            <button class="style-btn active">简洁</button>
-            <button class="style-btn">详细</button>
-            <button class="style-btn">平衡</button>
+        <div class="qc-section">
+          <div class="qc-section-title">
+            <span class="qc-section-title-text">对每只虾的配置 <span class="qc-section-subtitle">（根据用户之前选中的虾，每只都可以修改）</span>：</span>
+            <span class="qc-footnote">不想改可直接「<a class="qc-link" href="08-onboarding-quickstart.html" target="_top">快速体验</a>」</span>
+          </div>
+
+          <div class="qc-shrimp-list">
+            <div class="qc-shrimp-card">
+              <label class="qc-avatar-picker" title="点击更换头像">
+                <input class="qc-avatar-input" type="file" accept="image/*" />
+                <div class="qc-avatar-fallback" aria-hidden="true">🦐</div>
+                <img class="qc-avatar-preview is-hidden" alt="头像预览" />
+              </label>
+              <div class="qc-field">
+                <label class="qc-label" for="shrimp-daily-name">名称</label>
+                <input id="shrimp-daily-name" class="qc-input" type="text" value="日常虾" autocomplete="off" />
+              </div>
+              <div class="qc-field">
+                <label class="qc-label" for="shrimp-daily-persona">人设</label>
+                <textarea id="shrimp-daily-persona" class="qc-textarea qc-textarea--persona" rows="4" placeholder="默认填好，用户可修改"></textarea>
+              </div>
+            </div>
+
+            <div class="qc-shrimp-card">
+              <label class="qc-avatar-picker" title="点击更换头像">
+                <input class="qc-avatar-input" type="file" accept="image/*" />
+                <div class="qc-avatar-fallback" aria-hidden="true">🦐</div>
+                <img class="qc-avatar-preview is-hidden" alt="头像预览" />
+              </label>
+              <div class="qc-field">
+                <label class="qc-label" for="shrimp-code-name">名称</label>
+                <input id="shrimp-code-name" class="qc-input" type="text" value="代码助手" autocomplete="off" />
+              </div>
+              <div class="qc-field">
+                <label class="qc-label" for="shrimp-code-persona">人设</label>
+                <textarea id="shrimp-code-persona" class="qc-textarea qc-textarea--persona" rows="4" placeholder="默认填好，用户可修改"></textarea>
+              </div>
+            </div>
+
+            <div class="qc-shrimp-card">
+              <label class="qc-avatar-picker" title="点击更换头像">
+                <input class="qc-avatar-input" type="file" accept="image/*" />
+                <div class="qc-avatar-fallback" aria-hidden="true">🦐</div>
+                <img class="qc-avatar-preview is-hidden" alt="头像预览" />
+              </label>
+              <div class="qc-field">
+                <label class="qc-label" for="shrimp-write-name">名称</label>
+                <input id="shrimp-write-name" class="qc-input" type="text" value="写作助手" autocomplete="off" />
+              </div>
+              <div class="qc-field">
+                <label class="qc-label" for="shrimp-write-persona">人设</label>
+                <textarea id="shrimp-write-persona" class="qc-textarea qc-textarea--persona" rows="4" placeholder="默认填好，用户可修改"></textarea>
+              </div>
+            </div>
           </div>
         </div>
 
-        <!-- Language Setting -->
-        <div class="setting-group">
-          <label class="setting-label">语言偏好</label>
-          <select class="setting-select">
-            <option value="zh-CN" selected>简体中文</option>
-            <option value="zh-TW">繁體中文</option>
-            <option value="en">English</option>
-            <option value="ja">日本語</option>
-          </select>
-        </div>
-      </div>
-
-      <!-- Bottom Buttons -->
-      <div class="bottom-buttons">
-        <a href="04-onboarding-select.html" class="btn-prev">
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span>上一步</span>
-        </a>
-        <a href="06-onboarding-permission.html" class="btn-next">
-          <span>下一步</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M6 12L10 8L6 4" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
-      </div>
+        <header class="qc-header">
+          <a class="qc-skip" href="08-onboarding-quickstart.html" target="_top">跳过</a>
+          <a class="qc-submit" href="06-onboarding-permission.html" target="_top">下一步</a>
+        </header>
+      </section>
     </div>
   </div>
 
   <script>
-    // 个性单选
-    document.querySelectorAll('.personality-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        document.querySelectorAll('.personality-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
-      });
-    });
+    // 头像预览（本地）
+    document.querySelectorAll('.qc-avatar-input').forEach(input => {
+      input.addEventListener('change', function() {
+        const file = this.files && this.files[0];
+        if (!file) return;
 
-    // 回复风格单选
-    document.querySelectorAll('.style-btn').forEach(btn => {
-      btn.addEventListener('click', function() {
-        document.querySelectorAll('.style-btn').forEach(b => b.classList.remove('active'));
-        this.classList.add('active');
+        const picker = this.closest('.qc-avatar-picker');
+        const img = picker && picker.querySelector('.qc-avatar-preview');
+        const fallback = picker && picker.querySelector('.qc-avatar-fallback');
+        if (!img) return;
+
+        img.src = URL.createObjectURL(file);
+        img.classList.remove('is-hidden');
+        if (fallback) fallback.classList.add('is-hidden');
       });
     });
   </script>

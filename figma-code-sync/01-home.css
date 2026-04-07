@@ -105,6 +105,9 @@ body {
 .tab-active {
   background: rgba(255,255,255,0.08);
   border: 0.5px solid rgba(255,255,255,0.08);
+  width: 200px;
+  max-width: 200px;
+  flex: 0 0 200px;
 }
 .tab-icon {
   width: 14px;
@@ -240,7 +243,12 @@ body {
   padding: 80px 154px 4px;
   position: relative;
   overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   gap: 40px;
+}
+.content-area::-webkit-scrollbar {
+  display: none;
 }
 
 /* Top Tip */
@@ -252,7 +260,7 @@ body {
   gap: 4px;
 }
 .tip-btn { width: 28px; height: 28px; }
-.tip-btn img { width: 20px; height: 20px; }
+.tip-btn img { width: 16px; height: 16px; }
 .notify-wrap { position: relative; display: flex; }
 .notify-dot {
   position: absolute;
@@ -387,7 +395,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 172px;
+  height: 136px;
 }
 
 .input-text-area {

@@ -32,6 +32,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -529,7 +530,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  height: 172px;
+  height: 136px;
 }
 
 .input-text-area {
@@ -662,7 +663,7 @@ body {
 
 /* ===== Effect A: 全屏欢迎动画 ===== */
 .effect-overlay {
-  position: fixed;
+  position: absolute;
   inset: 0;
   z-index: 9999;
   display: flex;
@@ -670,6 +671,7 @@ body {
   justify-content: center;
   background: #09090b;
   transition: opacity 0.8s ease;
+  border-radius: 12px;
 }
 
 .effect-overlay.effect-hidden {
@@ -679,6 +681,17 @@ body {
 .effect-overlay.fade-out {
   opacity: 0;
   pointer-events: none;
+}
+
+/* Effect A 显示时：先隐藏主界面，再淡入 */
+.app-window.effect-a-active .tab-bar,
+.app-window.effect-a-active .main-layout {
+  opacity: 0;
+}
+
+.tab-bar,
+.main-layout {
+  transition: opacity 0.8s ease;
 }
 
 .effect-a-content {
