@@ -423,12 +423,16 @@ body {
   height: 22px;
   display: flex;
   align-items: center;
+  overflow: hidden;
 }
 
 .logo-text img {
   height: 22px;
   width: auto;
   object-fit: contain;
+  font-size: 18px;
+  font-weight: 700;
+  color: rgba(255,255,255,0.8);
 }
 
 .hero-subtitle {
@@ -542,6 +546,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  height: 172px;
   overflow: hidden;
 }
 
@@ -549,7 +554,7 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 2px;
-  min-height: 52px;
+  flex: 1;
 }
 
 .input-cursor {
@@ -576,7 +581,8 @@ body {
 .input-toolbar {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+  height: 32px;
 }
 
 .toolbar-icons {
@@ -616,7 +622,6 @@ body {
   padding: 4px;
   transition: background 0.15s;
   flex-shrink: 0;
-  margin-left: 16px;
 }
 
 .send-btn img { width: 24px; height: 24px; object-fit: contain; }
